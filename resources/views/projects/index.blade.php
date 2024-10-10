@@ -1,5 +1,3 @@
 <x-layouts.app>
-
-    <livewire:teste/>
-
+    Oi
 </x-layouts.app>

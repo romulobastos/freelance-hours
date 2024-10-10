@@ -12,6 +12,6 @@ class WelcomeController extends Controller
         // User::query()->create([
         //     'name' => 'Rômulo',
         // ]);
-        return view('teste.jeremias');
+        return view('welcome');
     }
 }
