@@ -1,3 +1,9 @@
-<div>
-    <!-- You must be the change you wish to see in the world. - Mahatma Gandhi -->
-</div>
+<x-layouts.app>
+
+    <livewire:projects.show :$project />
+
+    <br><br><br>
+
+    <livewire:projects.proposals :$project />
+
+</x-layouts.app>
