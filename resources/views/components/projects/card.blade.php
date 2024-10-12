@@ -4,9 +4,7 @@
     <div class="flex items-start justify-between pb-4">
         <div class="flex flex-col gap-[16px]">
             <div>
-                <span class="bg-[#C0F7B4] text-[#1D8338] rounded-full font-bold text-center uppercase py-[6px] px-[14px] text-[12px] tracking-wide ">
-                    {{ $project->status->label() }}
-                </span>
+                <x-projects.status :status="$project->status" />
             </div>
             <h1 class="text-[28px] text-white leading-9">
                 {{ $project->title }}

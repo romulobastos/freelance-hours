@@ -1,4 +1,4 @@
-<x-proposals :proposals="$project->proposals" />
+<x-proposals :proposals="$this->proposals" />
 {{-- <div>
     <h1>Comp Livewire projects.proposals</h1>
     <hr>

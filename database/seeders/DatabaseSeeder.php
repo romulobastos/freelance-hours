@@ -2,11 +2,13 @@
 
 namespace Database\Seeders;
 
+use App\Actions\ArrangePositions;
 use App\Models\Project;
 use App\Models\Proposal;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -30,6 +32,9 @@ class DatabaseSeeder extends Seeder
                 // fabricar de 2 a 15 propostas para cada projeto
                 // envia o id do projeto, armazenado acima, para a criação da fk
                 Proposal::factory()->count(random_int(2,15))->create(['project_id' => $project->id]);
+
+                // ajusta posicoes e status (up or down) na lista
+                ArrangePositions::run($project->id);
             });
     }
 }
