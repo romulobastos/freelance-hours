@@ -6,6 +6,13 @@ FreelanceHours is an innovative project designed to connect freelancers with pro
 
 This platform streamlines the process of finding the right developer, making it easier for project owners to bring their visions to life.
 
+## Demonstration
+<video width="600" controls>
+  <source src="https://raw.githubusercontent.com/romulobastos/freelance-hours/refs/heads/main/public/demonstration.webm" type="video/webm">
+</video>
+
+[Demonstration Video](https://raw.githubusercontent.com/romulobastos/freelance-hours/refs/heads/main/public/demonstration.webm)
+
 ## Requirements
 
 - PHP 8.2+
